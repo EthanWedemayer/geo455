@@ -2,16 +2,64 @@
 <html>
     <head>
        <title>geo455_ex2</title>
-    </head>
-    <body bgcolor="#EDDD9E">
-       <h1 align="center">Exercise 2</h1>
-             
-             <p> Here is the list of exercises we have completed in class</p>
-             <ul>
-                 <li><a href="example-02-01.html">Example 02-01</a></li>
-                 <li><a href="example-02-02.html">Example 02-02</a></li>
-                 <li><a href="example-02-03.html">Example 02-03</a></li>
+    <style> 
+        #container {
+                height: relative;
+                width: relative;
+                margin-top: auto;
+                margin-right: auto;
+                margin-bottom: auto;
+                margin-left: auto;}
+        
+        #container #leftsidebar {
+                position: static;
+                width: 200px;
+                top: 250px;
+                left: 50px;
+                padding: 10px 15px;
+                float: left;
+                height: 305px;
+                margin: 5px;
+                font-size: 1em;
+                font-family: "Lora", serif;
+                letter-spacing: .04em;
+                background-color: rgba(255,180,203, 0.5);
+                border: 1px solid grey;
+                border-radius: 15px;
+        }
+        #container #menulist {
+                margin: 1px;
+                padding: 1px;
+            }
 
-        </ul>
-     </body>
+            #container .menuitem {
+                background: #ffffff;
+                border-radius: 4px;
+                font-size: 1em;
+                font-family: "Lora", serif;
+                letter-spacing: .04em;
+                list-style-type: none;
+                margin: 4px;
+                padding: 2px;
+            }
+        
+    </style>
+    </head>
+    <body bgcolor="#9EEAFE">
+        <div id="container">
+             <div id= "leftsidebar">
+                <h3>Lab Assignments</h3>
+                <ul id="menulist">
+                  <li class="menuitem"><a href="example-02-01.html">Example 02-01</a></li>
+                  <li class="menuitem"><a href="example-02-02.html">Example 02-02</a></li>
+                  <li class="menuitem"><a href="example-02-03.html">Example 02-03</a></li>
+                </ul>
+            </div>
+            
+        <h1 align="center">Exercise 2</h1>
+             
+             <p> To the left is a list of the three parts that were done in this exercise.<br>The first two are centered around learning basic style sheets, and the third one adds in the box function.</p>
+             
+        </div>
+    </body>
 </html>
