@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS conflicts</title>
+        <style>
+            * { font-family: Arial, Verdana, sans-serif; }
+            h1 { font-family: "Georgia", monospace; }
+            h1 { color: goldenrod; }
+            i { color: green; }
+            i { color: blue; }
+            b { color: pink; }
+            p b { color: mediumseagreen; }
+            #redstuff {color: red;}
+            #intro { font-size: 60%; }
+            p { font-size: 100%; }
+        </style>
+    </head>
+    <body>
+        <h1>This is a first-level heading and it is in gold!</h1>
+        <p id="intro">This is the <i>introduction paragraph.</i> It has an <b>'id' attribute with the value of "intro"</b>. It is styled differently from all other <i> paragraphs, using a CSS rule with an ID Selector</i>.</p>
+        <p>This is the <i>second</i> paragraph. It <b>does not</b> have an 'id' attribute.</p>
+        <p>This is the <i>third</i> paragraph. It <b>also does not have an 'id' attribute.</b> </p>
+        <p><b>My name is Ethan Wedemayer</b><i> and I am working on this exercise 2 project!</i></p>
+        <p id="redstuff">This text is red through an ID class!</p>
+    </body>
+</html>
