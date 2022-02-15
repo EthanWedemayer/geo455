@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>geo455_lab3</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+        
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: "whitesmoke";
+                font-family: "Noto Sans", sans-serif;
+                color: #3d3d3d;
+            }
+            #title {
+                position: fixed;
+                margin-top: 0;
+                top: 10px;
+                left: 80px;
+                font-size: 4em;
+                font-family: "Lora", serif;
+                letter-spacing: .04em;
+                padding: 10px 15px;
+                background-color: rgba(255, 255, 254,1);
+                border: 1px solid grey;
+                border-radius: 3px;
+                z-index: 800;
+            }
+            #description h2 {
+                font-family: "Lora", serif;
+                letter-spacing: .04em;
+            }
+            #map {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            #description {
+                position: fixed;
+                bottom: 20px;
+                left: 10px;
+                width: 280px;
+                padding: 0px 15px;
+                background-color: rgba(255, 255, 255, 0.7);
+                border: 1px solid grey;
+                border-radius: 3px;
+                z-index: 800;
+                
+            }
+            
+            #parks.jpg {
+                
+                position: fixed;
+                right: 100px;
+                bottom: 110px;
+                
+            }
+            #description p {
+                font-size: .9em;
+                line-height: 1.5em;
+            }
+            #description a {
+                color: #005daa;
+                text-decoration: none;
+            }
+            #description a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Lab 3: National Parks I would like to Visit</h1>
+        <div id="map"></div>
+        <img src="parks.jpg" width="200px">
+        <div id="description">
+            <h2>About this assignment</h2>
+            <p>This is a list of all the US National Parks that I would like to visit. I hope to visit each one of these before I get too old, because I love hiking.</p>
+            <p>1. Yosemite National Park</p>
+            <p>2. Sequoia National Park</p>
+            <p>3. Badlands National Park</p>
+            <p>4. Yellowstone National Park</p>
+            <p>5. Glacier National Park</p>
+            <p>6. Death Valley National Park</p>
+            <p>7. White Sands National Park</p>
+            <p>8. Grand Canyon National Park</p>
+            <p>9. Zion National Park</p>
+            <p>10. Arches National Park</p>
+            <p>11. Bryce Canyon National Park</p>
+            <p>12. Everglades National Park</p>
+        </div>
+        <script src="lab3_script.js"></script>
+    </body>
+</html>
