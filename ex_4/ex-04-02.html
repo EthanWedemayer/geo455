@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Earth poles</title>
+    </head>
+    <body>
+        <h2>Earth Poles Viewer</h2>
+        <h5>Double-click south button to see South Pole and hover over north button to see North Pole.</h5>
+        <img id="myImage" src="images/north.svg"><br>
+        <img id="usaImage" src="america.png"><br>
+        <input type="button" value="North Pole" id="north">
+        <input type="button" value="South Pole" id="south">
+        <input type="button" value="USA" id="usa">
+        <script>
+            function showNorth() {
+                document
+                    .getElementById("myImage")
+                    .src = "images/north.svg";
+            }
+            function showSouth() {
+                document
+                    .getElementById("myImage")
+                    .src = "images/south.svg";
+            }
+            
+            function showUSA() {
+                document
+                    .getElementById("usaImage")
+                    .src = "america.png";
+            }
+            document
+                .getElementById("north") 
+                .addEventListener("dblclick", showNorth);
+               
+            document
+                .getElementById("south")
+                .addEventListener("dblclick", showSouth);
+            
+            document
+                .getElementById("usa")
+                .addEventListener("click", showUSA);
+        </script>
+    </body>
+</html>
+
