@@ -97,7 +97,7 @@
                 top: 10px;
                 float: right;
                 padding: 10px;
-                height: 500px;
+                height: 450px;
                 margin: 5px;
                 font-size: 1em;
                 font-family: "Lora", serif;
@@ -123,7 +123,9 @@
                 margin: 4px;
                 padding: 2px;
             }
+
         </style>
+            
     </head>
     <body>
         <div id="container">
@@ -173,22 +175,75 @@
 
             </div>
             <div id="main"> 
-                <h2>Welcome!</h2>    
+                <h3>Welcome!</h3>    
                     <p>
-                        This is the main page for the webmapping course at the University of Wisconsin-La Crosse. My name is Ethan Wedemayer and I will be creating all of the pages in this document. To the left, you will see some labs, exercises, and a final project tab where you can explore all of my work throughout the semester. Enjoy!
+                        <SPAN STYLE="background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f5/Cool_waters_of_the_turquoise_blue_Aegean_Sea_-_Ayval%C4%B1k_-_panoramio.jpg">This is the main page for the webmapping course at the University of Wisconsin-La Crosse. My name is Ethan Wedemayer and I will be creating all of the pages in this document. To the left, you will see some labs, exercises, and a final project tab where you can explore all of my work throughout the semester. Enjoy!</SPAN>
 
                     </p>
      
                     <h3>Who am I really?</h3>
                     <p>
                         
-                        I am currently a senior Geography major with an emphasis in GIS. This is my last semester in college, and I am excited to join the real workforce! I have several talents that are based in the realm of GIS, remote sensing, and surveying. I am taking this class to add web mapping to that list!
+                        <SPAN STYLE="background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f5/Cool_waters_of_the_turquoise_blue_Aegean_Sea_-_Ayval%C4%B1k_-_panoramio.jpg"> I am currently a senior Geography major with an emphasis in GIS. This is my last semester in college, and I am excited to join the real workforce! I have several talents that are based in the realm of GIS, remote sensing, and surveying. I am taking this class to add web mapping to that list!
+                        </SPAN>
                         
                     </p>
+                    <h1>Time for some fun!</h1>
+                    <p>
+                        
+                        <SPAN STYLE="background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f5/Cool_waters_of_the_turquoise_blue_Aegean_Sea_-_Ayval%C4%B1k_-_panoramio.jpg"> Click the "Start" button in the bottom-left corner and watch the car drive! Make sure to hit "Reset", otherwise it will keep driving!
+                        </SPAN>
+                        
+                    </p>
+                
            </div>
 
         </div>
-        <script src="index.js"></script>
+        
+        <img src=lambo.png id='i1' style="position:relative; left: 500; top: 100;">
+        <br><br><br><br>
+        <input type=button onClick=timer() value='Start'>
+        <input type=button onClick=reset1() value='Reset'>
+        <div id='msg'></div>
+
+        <script language='JavaScript' type='text/JavaScript'>
+        <!--
+        var dir='right';
+
+        function reset1(){
+        clearTimeout(my_time);
+        document.getElementById('i1').style.left= "500px";
+        document.getElementById('i1').style.top= "100px";
+        document.getElementById("msg").innerHTML="";
+        }
+
+        function disp(){
+        var step=5; // Change this step value
+        //alert(dir);
+
+        var y=document.getElementById('i1').offsetTop;
+        var x=document.getElementById('i1').offsetLeft;
+        if(x >= 1000 ){
+        dir = 'left';
+        }
+        if(x <= 500 ){
+        dir = 'right';
+        }
+
+        if(dir=='right'){x= x +step;}
+        else{x=x - step;}
+        document.getElementById('i1').style.left= x + "px"; // horizontal  movment
+        //////////////////////
+        }
+        function timer(){
+        disp();
+        var y=document.getElementById('i1').offsetTop;
+        var x=document.getElementById('i1').offsetLeft;
+        document.getElementById("msg").innerHTML="X: " + x  + " Y : " + y
+        my_time=setTimeout('timer()',10);
+        }
+        //-->
+        </script>
+       
     </body>
 </html>
-       
