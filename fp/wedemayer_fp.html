@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>final project</title>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <link rel="stylesheet" href="https://labs.easyblog.it/maps/leaflet-search/src/leaflet-search.css">
+        <script src="https://labs.easyblog.it/maps/leaflet-search/src/leaflet-search.js"></script>
+        <link href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css" rel="stylesheet">
+        <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+        <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+        <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <script src='animaltypes_tst.js'></script>
+        <script src='endangered_point.js'></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: "whitesmoke";
+                font-family: "Noto Sans", sans-serif;
+                color: #3d3d3d;
+            }
+            #title {
+                position: fixed;
+                margin-top: 0;
+                top: 10px;
+                left: 650px;
+                font-size: 2em;
+                font-family: "Lora", serif;
+                letter-spacing: .04em;
+                padding: 10px 15px;
+                background-color: rgba(255, 255, 255, 1);
+                border: 1px solid grey;
+                border-radius: 3px;
+                z-index: 800;
+            }
+            #description h2 {
+                font-family: "Lora", serif;
+                letter-spacing: .04em;
+            }
+            #map {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            
+            .custom .leaflet-popup-tip
+            .custom .leaflet-popup-content-wrapper {
+                background: #000000;
+                color: white;
+            }
+            
+            #description {
+                position: fixed;
+                bottom: 20px;
+                right: 10px;
+                width: 280px;
+                padding: 0px 15px;
+                background-color: rgba(255, 255, 255, 1);
+                border: 1px solid grey;
+                border-radius: 3px;
+                z-index: 800;
+            }
+            #description p {
+                font-size: .9em;
+                line-height: 1.5em;
+            }
+            #description a {
+                color: #005daa;
+                text-decoration: none;
+            }
+            #description a:hover {
+                text-decoration: underline;   
+            }
+            #legend {
+                position: fixed;
+                bottom: 60px;
+                right: 10px;
+                width: 230px;
+                padding: 0px 15px;
+                background-color: rgba(255, 255, 255, 1);
+                border: 1px solid grey;
+                border-radius: 3px;
+                z-index: 800;
+            }
+            #about {
+                position: fixed;
+                bottom: 200px;
+                left: 10px;
+                width: 280px;
+                padding: 0px 15px;
+                background-color: rgba(255, 255, 255, 1);
+                border: 1px solid grey;
+                border-radius: 3px;
+                z-index: 800;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">US State Flag, Animal, and Flower Map</h1>
+        <div id="map"></div>
+        <div id="legend">
+            <h2>Legend</h2>
+            <img src="endangered_legend.png" width="233" height="88" align="center"><img>
+            <img src="animal_legend.png" width="233" height="267" align="center"><img>
+            <p2> </p2>
+        </div>
+        <div id="about">
+            <h2>Map Information</h2>
+            <p>This map serves three major functions that all relate to showing data spatially. Enjoy!</p>
+            <p>1. To show all 50 states and their state flag, animal, and flower. Toggle on and off these layers and click on each state's point!</p>
+            <p>2. To group each state's state animal into 8 different categories in order to show which types of animals are the most popular. Use this layer along with the Animals point layer!</p>
+            <p>3. To show which states have the most endangered species. This includes animals and plants. Click on a yellow circle to see the exact amount per state!</p>
+        </div>
+        <script src="fp_2.js"></script>
+    </body>
+</html>
