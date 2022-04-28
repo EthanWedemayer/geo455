@@ -443,7 +443,7 @@ var endangeredspecies; // define a variable to make the geojson layer accessible
   }
 }).addTo(mymap);
 
-var overlays = {"<img src='usa_flag.png' height=15> Flags": states, "<img src='usa_flower.png' height=25> Flowers": Flower, "<img src='usa_eagle.png' height=25> Animals": animal, "<img src='usa_animal.png' height=25>  Animals Background Map": geojson, "<img src='usa_panda.png' height=25> Endangered Species Dot Density Map": endangeredspecies};
+var overlays = {"<img src='usa_flag.png' height=15> Flags": states, "<img src='usa_flower.png' height=25> Flowers": Flower, "<img src='usa_eagle.png' height=25> Animals": animal, "<img src='usa_animal.png' height=25>  Animals Background Map": geojson, "<img src='usa_panda.png' height=25> Endangered Species Proportional Circles Map": endangeredspecies};
 
 //Create the menu
  
