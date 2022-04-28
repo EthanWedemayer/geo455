@@ -1,113 +1,4 @@
-var alabamaPopup = "Alabama<br/><br/>State Flag<br/><img src='ak.png' width='150px'/>";
-var alaskaPopup = "Alaska<br/><br/>State Flag<br/><img src='al.png' width='150px'/>";
-var arizonaPopup = "Arizona<br/><br/>State Flag<br/><img src='az.png' width='150px'/>";
-var arkansasPopup = "Arkansas<br/><br/>State Flag<br/><img src='ar.png' width='150px'/>";
-var californiaPopup = "California<br/><br/>State Flag<br/><img src='ca.png' width='150px'/>";
-var coloradoPopup = "Colorado<br/><br/>State Flag<br/><img src='co.png' width='150px'/>";
-var connecticutPopup = "Connecticut<br/><br/>State Flag<br/><img src='ct.png' width='150px'/>";
-var delawarePopup = "Delaware<br/><br/>State Flag<br/><img src='de.png' width='150px'/>";
-var floridaPopup = "Florida<br/><br/>State Flag<br/><img src='fl.png' width='150px'/>";
-var georgiaPopup = "Georgia<br/><br/>State Flag<br/><img src='ga.png' width='150px'/>";
-var hawaiiPopup = "Hawaii<br/><br/>State Flag<br/><img src='hi.png' width='150px'/>";
-var idahoPopup = "Idaho<br/><br/>State Flag<br/><img src='id.png' width='150px'/>";
-var illinoisPopup = "Illinois<br/><br/>State Flag<br/><img src='il.png' width='150px'/>";
-var indianaPopup = "Indiana<br/><br/>State Flag<br/><img src='in.png' width='150px'/>";
-var iowaPopup = "Iowa<br/><br/>State Flag<br/><img src='ia.png' width='150px'/>";
-var kansasPopup = "Kansas<br/><br/>State Flag<br/><img src='ks.png' width='150px'/>";
-var kentuckyPopup = "Kentucky<br/><br/>State Flag<br/><img src='ky.png' width='150px'/>";
-var louisianaPopup = "Louisiana<br/><br/>State Flag<br/><img src='la.png' width='150px'/>";
-var mainePopup = "Maine<br/><br/>State Flag<br/><img src='me.png' width='150px'/>";
-var marylandPopup = "Maryland<br/><br/>State Flag<br/><img src='ml.png' width='150px'/>";
-var massachusettsPopup = "Massachusetts<br/><br/>State Flag<br/><img src='ma.png' width='150px'/>";
-var michiganPopup = "Michigan<br/><br/>State Flag<br/><img src='mi.png' width='150px'/>";
-var minnesotaPopup = "Minnesota<br/><br/>State Flag<br/><img src='mn.png' width='150px'/>";
-var mississippiPopup = "Mississippi<br/><br/>State Flag<br/><img src='ms.png' width='150px'/>";
-var missouriPopup = "Missouri<br/><br/>State Flag<br/><img src='mo.png' width='150px'/>";
-var montanaPopup = "Montana<br/><br/>State Flag<br/><img src='mt.png' width='150px'/>";
-var nebraskaPopup = "Nebraska<br/><br/>State Flag<br/><img src='ne.png' width='150px'/>";
-var nevadaPopup = "Nevada<br/><br/>State Flag<br/><img src='nv.png' width='150px'/>";
-var newhampshirePopup = "New Hampshire<br/><br/>State Flag<br/><img src='nh.png' width='150px'/>";
-var newjerseyPopup = "New Jersey<br/><br/>State Flag<br/><img src='nj.png' width='150px'/>";
-var newmexicoPopup = "New Mexico<br/><br/>State Flag<br/><img src='nm.png' width='150px'/>";
-var newyorkPopup = "New York<br/><br/>State Flag<br/><img src='ny.png' width='150px'/>";
-var northcarolinaPopup = "North Carolina<br/><br/>State Flag<br/><img src='nc.png' width='150px'/>";
-var northdakotaPopup = "North Dakota<br/><br/>State Flag<br/><img src='nd.png' width='150px'/>";
-var ohioPopup = "Ohio<br/><br/>State Flag<br/><img src='oh.png' width='150px'/>";
-var oklahomaPopup = "Oklahoma<br/><br/>State Flag<br/><img src='ok.png' width='150px'/>";
-var oregonPopup = "Oregon<br/><br/>State Flag<br/><img src='or.png' width='150px'/>";
-var pennsylvaniaPopup = "Pennsylvania<br/><br/>State Flag<br/><img src='pa.png' width='150px'/>";
-var rhodeislandPopup = "Rhode Island<br/><br/>State Flag<br/><img src='ri.png' width='150px'/>";
-var southcarolinaPopup = "South Carolina<br/><br/>State Flag<br/><img src='sc.png' width='150px'/>";
-var southdakotaPopup = "South Dakota<br/><br/>State Flag<br/><img src='sd.png' width='150px'/>";
-var tennesseePopup = "Tennessee<br/><br/>State Flag<br/><img src='tn.png' width='150px'/>";
-var texasPopup = "Texas<br/><br/>State Flag<br/><img src='tx.png' width='150px'/>";
-var utahPopup = "Utah<br/><br/>State Flag<br/><img src='ut.png' width='150px'/>";
-var vermontPopup = "Vermont<br/><br/>State Flag<br/><img src='vt.png' width='150px'/>";
-var virginiaPopup = "Virginia<br/><br/>State Flag<br/><img src='va.png' width='150px'/>";
-var washingtonPopup = "Washington<br/><br/>State Flag<br/><img src='wa.png' width='150px'/>";
-var westvirginiaPopup = "West Virginia<br/><br/>State Flag<br/><img src='wv.png' width='150px'/>";
-var wisconsinPopup = "Wisconsin<br/><br/>State Flag<br/><img src='wi.png' width='150px'/>";
-var wyomingPopup = "Wyoming<br/><br/>State Flag<br/><img src='wy.png' width='150px'/>";
 
-var customOptions ={'maxWidth': '150','className' : 'custom'};
-
-var flagicon = new L.Icon({
-  iconUrl: 'greencircle.png',
-  iconSize: [32, 32],
-});
-
-var states = L.layerGroup();
-
-var alabama = L.marker([32.98993941401608, -86.7496644060821], {icon: flagicon}).bindPopup(alabamaPopup, customOptions).addTo(states);
-var alaska = L.marker([59.677869764778976, -156.7521272881162], {icon: flagicon}).bindPopup(alaskaPopup, customOptions).addTo(states);
-var arizona = L.marker([34.03098684313357, -111.84446448039215], {icon: flagicon}).bindPopup(arizonaPopup, customOptions).addTo(states);
-var arkansas = L.marker([34.90531411008514, -92.55762966043598], {icon: flagicon}).bindPopup(arkansasPopup, customOptions).addTo(states);
-var california = L.marker([36.98915119114494, -120.08472643056487], {icon: flagicon}).bindPopup(californiaPopup, customOptions).addTo(states);
-var colorado = L.marker([38.999846194261025, -105.62504828666378], {icon: flagicon}).bindPopup(coloradoPopup, customOptions).addTo(states);
-var connecticut = L.marker([41.69171222226279, -72.6608786278491], {icon: flagicon}).bindPopup(connecticutPopup, customOptions).addTo(states);
-var delaware = L.marker([38.77922558443521, -75.46394079477906], {icon: flagicon}).bindPopup(delawarePopup, customOptions).addTo(states);
-var florida = L.marker([28.027963433776566, -81.55177334266371], {icon: flagicon}).bindPopup(floridaPopup, customOptions).addTo(states);
-var georgia = L.marker([32.48503006437026, -83.34806327098599], {icon: flagicon}).bindPopup(georgiaPopup, customOptions).addTo(states);
-var hawaii = L.marker([19.66212931339492, -155.47179987426296], {icon: flagicon}).bindPopup(hawaiiPopup, customOptions).addTo(states);
-var idaho = L.marker([43.934741224504194, -114.60848989637323], {icon: flagicon}).bindPopup(idahoPopup, customOptions).addTo(states);
-var illinois = L.marker([40.02665667367503, -89.36085376898849], {icon: flagicon}).bindPopup(illinoisPopup, customOptions).addTo(states);
-var indiana = L.marker([39.98424600284433, -86.14953172764851], {icon: flagicon}).bindPopup(indianaPopup, customOptions).addTo(states);
-var iowa = L.marker([42.236565708077165, -93.62416061697431], {icon: flagicon}).bindPopup(iowaPopup, customOptions).addTo(states);
-var kansas = L.marker([38.353188723293364, -98.44114367898432], {icon: flagicon}).bindPopup(kansasPopup, customOptions).addTo(states);
-var kentucky = L.marker([37.76465925030588, -84.76534119258815], {icon: flagicon}).bindPopup(kentuckyPopup, customOptions).addTo(states);
-var louisiana = L.marker([31.601234537109928, -92.59985955494126], {icon: flagicon}).bindPopup(louisianaPopup, customOptions).addTo(states);
-var maine = L.marker([45.40065585606463, -69.19577663720996], {icon: flagicon}).bindPopup(mainePopup, customOptions).addTo(states);
-var maryland = L.marker([39.5071156504704, -76.96001600821879], {icon: flagicon}).bindPopup(marylandPopup, customOptions).addTo(states);
-var massachusetts = L.marker([42.3662514345874, -72.14984543731329], {icon: flagicon}).bindPopup(massachusettsPopup, customOptions).addTo(states);
-var michigan = L.marker([43.43089211949538, -84.61325000302706], {icon: flagicon}).bindPopup(michiganPopup, customOptions).addTo(states);
-var minnesota = L.marker([46.431971606052706, -94.84440080850209], {icon: flagicon}).bindPopup(minnesotaPopup, customOptions).addTo(states);
-var mississippi = L.marker([32.97835866123542, -89.72096843951367], {icon: flagicon}).bindPopup(mississippiPopup, customOptions).addTo(states);
-var missouri = L.marker([38.09158699058725, -92.49749557268743], {icon: flagicon}).bindPopup(missouriPopup, customOptions).addTo(states);
-var montana = L.marker([47.36313099818935, -110.34370175522034], {icon: flagicon}).bindPopup(montanaPopup, customOptions).addTo(states);
-var nebraska = L.marker([41.689092473138395, -99.59465723210691], {icon: flagicon}).bindPopup(nebraskaPopup, customOptions).addTo(states);
-var nevada = L.marker([39.354490119142525, -116.80647765800406], {icon: flagicon}).bindPopup(nevadaPopup, customOptions).addTo(states);
-var newhampshire = L.marker([43.50269893905927, -71.61759362169296], {icon: flagicon}).bindPopup(newhampshirePopup, customOptions).addTo(states);
-var newjersey = L.marker([39.82824287508574, -74.64112007521676], {icon: flagicon}).bindPopup(newjerseyPopup, customOptions).addTo(states);
-var newmexico = L.marker([34.470481967304345, -105.96653597623036], {icon: flagicon}).bindPopup(newmexicoPopup, customOptions).addTo(states);
-var newyork = L.marker([43.01228025862622, -75.18535229798476], {icon: flagicon}).bindPopup(newyorkPopup, customOptions).addTo(states);
-var northcarolina = L.marker([35.668073503279736, -78.13804648783346], {icon: flagicon}).bindPopup(northcarolinaPopup, customOptions).addTo(states);
-var northdakota = L.marker([47.640951061777905, -100.34540790823011], {icon: flagicon}).bindPopup(northdakotaPopup, customOptions).addTo(states);
-var ohio = L.marker([40.540998514931246, -82.77404109162896], {icon: flagicon}).bindPopup(ohioPopup, customOptions).addTo(states);
-var oklahoma = L.marker([35.7600736935514, -97.03154350026972], {icon: flagicon}).bindPopup(oklahomaPopup, customOptions).addTo(states);
-var oregon = L.marker([44.07682326525863, -120.6022568447746], {icon: flagicon}).bindPopup(oregonPopup, customOptions).addTo(states);
-var pennsylvania = L.marker([41.02410190527116, -77.83687806972206], {icon: flagicon}).bindPopup(pennsylvaniaPopup, customOptions).addTo(states);
-var rhodeisland = L.marker([41.71467965376083, -71.59068864978144], {icon: flagicon}).bindPopup(rhodeislandPopup, customOptions).addTo(states);
-var southcarolina = L.marker([33.69006289451358, -80.59367218704925], {icon: flagicon}).bindPopup(southcarolinaPopup, customOptions).addTo(states);
-var southdakota = L.marker([44.2495346623836, -100.34856865601172], {icon: flagicon}).bindPopup(southdakotaPopup, customOptions).addTo(states);
-var tennessee = L.marker([35.95591634389848, -86.5779674793946], {icon: flagicon}).bindPopup(tennesseePopup, customOptions).addTo(states);
-var texas = L.marker([31.942755192726427, -99.28388371933777], {icon: flagicon}).bindPopup(texasPopup, customOptions).addTo(states);
-var utah = L.marker([39.31189159257148, -111.61294267368878], {icon: flagicon}).bindPopup(utahPopup, customOptions).addTo(states);
-var vermont = L.marker([43.88501101411974, -72.77734305187968], {icon: flagicon}).bindPopup(vermontPopup, customOptions).addTo(states);
-var virginia = L.marker([37.64018210317473, -78.49931812770467], {icon: flagicon}).bindPopup(virginiaPopup, customOptions).addTo(states);
-var washington = L.marker([47.53137528469536, -119.95536766088262], {icon: flagicon}).bindPopup(washingtonPopup, customOptions).addTo(states);
-var westvirginia = L.marker([38.81274981703705, -80.71573556071814], {icon: flagicon}).bindPopup(westvirginiaPopup, customOptions).addTo(states);
-var wisconsin = L.marker([44.43664761100113, -89.7849529733894], {icon: flagicon}).bindPopup(wisconsinPopup, customOptions).addTo(states);
-var wyoming = L.marker([43.26237465203821, -107.42582510603197], {icon: flagicon}).bindPopup(wyomingPopup, customOptions).addTo(states);
 
 var aalabamaPopup = "Alabama<br/><br/>State Animal: Black Bear<br/><img src='blackbear.png' width='150px'/>";
 var aalaskaPopup = "Alaska<br/><br/>State Animal: Moose<br/><img src='moose.png' width='150px'/>";
@@ -220,11 +111,11 @@ var westvirginia = L.marker([38.81274981703705, -80.71573556071814], {icon: anim
 var wisconsin = L.marker([44.43664761100113, -89.7849529733894], {icon: animalicon}).bindPopup(awisconsinPopup, customOptions).addTo(animal);
 var wyoming = L.marker([43.26237465203821, -107.42582510603197], {icon: animalicon}).bindPopup(awyomingPopup, customOptions).addTo(animal);
 
-var falabamaPopup = "Alabama<br/><br/>State Flower: Camellia<br/><img src='Alabama_f.png' width='150px'/>";
-var falaskaPopup = "Alaska<br/><br/>State Flower: Forget-Me-Not<br/><img src='Alaska_f.png' width='150px'/>";
+var falabamaPopup = "Alabama<br/><br/>State Flower: Camellia<br/><img src='alabama_f.png' width='150px'/>";
+var falaskaPopup = "Alaska<br/><br/>State Flower: Forget-Me-Not<br/><img src='alaska_f.png' width='150px'/>";
 var farizonaPopup = "Arizona<br/><br/>State Flower: Saguaro Cactus Blossom<br/><img src='arizona_f_png.jfif' width='150px'/>";
-var farkansasPopup = "Arkansas<br/><br/>State Flower: Apple Blossom<br/><img src='Arkansas_f.png' width='150px'/>";
-var fcaliforniaPopup = "California<br/><br/>State Flower: California Poppy<br/><img src='California_f.png' width='150px'/>";
+var farkansasPopup = "Arkansas<br/><br/>State Flower: Apple Blossom<br/><img src='crkansas_f.png' width='150px'/>";
+var fcaliforniaPopup = "California<br/><br/>State Flower: California Poppy<br/><img src='california_f.png' width='150px'/>";
 var fcoloradoPopup = "Colorado<br/><br/>State Flower: Rocky Mountain Columbine<br/><img src='colorado_f.png' width='150px'/>";
 var fconnecticutPopup = "Connecticut<br/><br/>State Flower: Mountain Laurel<br/><img src='connecticut_f.png' width='150px'/>";
 var fdelawarePopup = "Delaware<br/><br/>State Flower: Peach Blossom<br/><img src='delaware_f.png' width='150px'/>";
@@ -235,15 +126,15 @@ var fidahoPopup = "Idaho<br/><br/>State Flower: Syringa<br/><img src='idaho_f.pn
 var fillinoisPopup = "Illinois<br/><br/>State Flower: Violet<br/><img src='illinois_f.png' width='150px'/>";
 var findianaPopup = "Indiana<br/><br/>State Flower: Peony<br/><img src='indiana_f.png' width='150px'/>";
 var fiowaPopup = "Iowa<br/><br/>State Flower: Wild Rose<br/><img src='iowa_f.png' width='150px'/>";
-var fkansasPopup = "Kansas<br/><br/>State Flower: Sunflower<br/><img src='Kansas_f.png' width='150px'/>";
+var fkansasPopup = "Kansas<br/><br/>State Flower: Sunflower<br/><img src='kansas_f.png' width='150px'/>";
 var fkentuckyPopup = "Kentucky<br/><br/>State Flower: Giant Goldenrod<br/><img src='kentucky_f.png' width='150px'/>";
-var flouisianaPopup = "Louisiana<br/><br/>State Flower: Magnolia<br/><img src='Louisiana_f.png' width='150px'/>";
-var fmainePopup = "Maine<br/><br/>State Flower: White Pine Cone<br/><img src='Maine_f.png' width='150px'/>";
+var flouisianaPopup = "Louisiana<br/><br/>State Flower: Magnolia<br/><img src='louisiana_f.png' width='150px'/>";
+var fmainePopup = "Maine<br/><br/>State Flower: White Pine Cone<br/><img src='maine_f.png' width='150px'/>";
 var fmarylandPopup = "Maryland<br/><br/>State Flower: Black-Eyed Susan<br/><img src='maryland_f.png' width='150px'/>";
 var fmassachusettsPopup = "Massachusetts<br/><br/>State Flower: Mayflower<br/><img src='massachusetts_f.png' width='150px'/>";
-var fmichiganPopup = "Michigan<br/><br/>State Flower: Apple Blossom<br/><img src='Michigan_f.png' width='150px'/>";
+var fmichiganPopup = "Michigan<br/><br/>State Flower: Apple Blossom<br/><img src='michigan_f.png' width='150px'/>";
 var fminnesotaPopup = "Minnesota<br/><br/>State Flower: Pink and White Ladys Slipper<br/><img src='minnesota_f.png' width='150px'/>";
-var fmississippiPopup = "Mississippi<br/><br/>State Flower: Evergreen Magnolia<br/><img src='Mississippi_f.png' width='150px'/>";
+var fmississippiPopup = "Mississippi<br/><br/>State Flower: Evergreen Magnolia<br/><img src='mississippi_f.png' width='150px'/>";
 var fmissouriPopup = "Missouri<br/><br/>State Flower: Hawthorn<br/><img src='missouri_f.png' width='150px'/>";
 var fmontanaPopup = "Montana<br/><br/>State Flower: Bitterroot<br/><img src='montana_f.png' width='150px'/>";
 var fnebraskaPopup = "Nebraska<br/><br/>State Flower: Giant Goldenrod<br/><img src='kentucky_f.png' width='150px'/>";
@@ -255,7 +146,7 @@ var fnewyorkPopup = "New York<br/><br/>State Flower: Rose<br/><img src='newyork_
 var fnorthcarolinaPopup = "North Carolina<br/><br/>State Flower: Flowering Dogwood<br/><img src='kentucky_f.png' width='150px'/>";
 var fnorthdakotaPopup = "North Dakota<br/><br/>State Flower: Wild Prairie Rose<br/><img src='northdakota_f.png' width='150px'/>";
 var fohioPopup = "Ohio<br/><br/>State Flower: Scarlet Carnation<br/><img src='ohio_f.png' width='150px'/>";
-var foklahomaPopup = "Oklahoma<br/><br/>State Flower: Oklahoma Rose<br/><img src='Oklahoma_f.png' width='150px'/>";
+var foklahomaPopup = "Oklahoma<br/><br/>State Flower: Oklahoma Rose<br/><img src='oklahoma_f.png' width='150px'/>";
 var foregonPopup = "Oregon<br/><br/>State Flower: Oregon Grape<br/><img src='oregon_f.png' width='150px'/>";
 var fpennsylvaniaPopup = "Pennsylvania<br/><br/>State Flower: Mountain Laurel<br/><img src='connecticut_f.png' width='150px'/>";
 var frhodeislandPopup = "Rhode Island<br/><br/>State Flower: Violet<br/><img src='illinois_f.png' width='150px'/>";
@@ -443,7 +334,7 @@ var endangeredspecies; // define a variable to make the geojson layer accessible
   }
 }).addTo(mymap);
 
-var overlays = {"<img src='usa_flag.png' height=15> Flags": states, "<img src='usa_flower.png' height=25> Flowers": Flower, "<img src='usa_eagle.png' height=25> Animals": animal, "<img src='usa_animal.png' height=25>  Animals Background Map": geojson, "<img src='usa_panda.png' height=25> Endangered Species Proportional Circles Map": endangeredspecies};
+var overlays = {"<img src='usa_flower.png' height=25> Flowers": Flower, "<img src='usa_eagle.png' height=25> Animals": animal, "<img src='usa_animal.png' height=25>  Animals Background Map": geojson, "<img src='usa_panda.png' height=25> Endangered Species Proportional Circles Map": endangeredspecies};
 
 //Create the menu
  
