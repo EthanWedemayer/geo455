@@ -113,7 +113,7 @@ var falabamaPopup = "Alabama<br/><br/>State Flower: Camellia<br/><img src='alaba
 var falaskaPopup = "Alaska<br/><br/>State Flower: Forget-Me-Not<br/><img src='alaska_f.png' width='150px'/>";
 var farizonaPopup = "Arizona<br/><br/>State Flower: Saguaro Cactus Blossom<br/><img src='arizona_f_png.jfif' width='150px'/>";
 var farkansasPopup = "Arkansas<br/><br/>State Flower: Apple Blossom<br/><img src='arkansas_f.png' width='150px'/>";
-var fcaliforniaPopup = "California<br/><br/>State Flower: California Poppy<br/><img src=cCalifornia_f.png' width='150px'/>";
+var fcaliforniaPopup = "California<br/><br/>State Flower: California Poppy<br/><img src=california_f.png' width='150px'/>";
 var fcoloradoPopup = "Colorado<br/><br/>State Flower: Rocky Mountain Columbine<br/><img src='colorado_f.png' width='150px'/>";
 var fconnecticutPopup = "Connecticut<br/><br/>State Flower: Mountain Laurel<br/><img src='connecticut_f.png' width='150px'/>";
 var fdelawarePopup = "Delaware<br/><br/>State Flower: Peach Blossom<br/><img src='delaware_f.png' width='150px'/>";
