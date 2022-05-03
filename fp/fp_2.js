@@ -282,7 +282,7 @@ var densityy; // define a variable to make the geojson layer accessible for the 
       radius: feature.properties.d * 2,
         onEachFeature: onEachFeature
     }).bindPopup(function (layer){
-    return '<p style="color:black">';
+    return '<p style="color:black">'  + 'Density of Endangered Species per State per 1000 sq miles (rounded to nearest whole number): ' + layer.feature.properties.d.toString();
     });
   }
 }).addTo(mymap);
