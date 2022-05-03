@@ -109,11 +109,11 @@ var westvirginia = L.marker([38.81274981703705, -80.71573556071814], {icon: anim
 var wisconsin = L.marker([44.43664761100113, -89.7849529733894], {icon: animalicon}).bindPopup(awisconsinPopup, customOptions).addTo(animal);
 var wyoming = L.marker([43.26237465203821, -107.42582510603197], {icon: animalicon}).bindPopup(awyomingPopup, customOptions).addTo(animal);
 
-var falabamaPopup = "Alabama<br/><br/>State Flower: Camellia<br/><img src='Alabama_f.png' width='150px'/>";
-var falaskaPopup = "Alaska<br/><br/>State Flower: Forget-Me-Not<br/><img src='Alaska_f.png' width='150px'/>";
+var falabamaPopup = "Alabama<br/><br/>State Flower: Camellia<br/><img src='alabama_f.png' width='150px'/>";
+var falaskaPopup = "Alaska<br/><br/>State Flower: Forget-Me-Not<br/><img src='alaska_f.png' width='150px'/>";
 var farizonaPopup = "Arizona<br/><br/>State Flower: Saguaro Cactus Blossom<br/><img src='arizona_f_png.jfif' width='150px'/>";
-var farkansasPopup = "Arkansas<br/><br/>State Flower: Apple Blossom<br/><img src='Arkansas_f.png' width='150px'/>";
-var fcaliforniaPopup = "California<br/><br/>State Flower: California Poppy<br/><img src='California_f.png' width='150px'/>";
+var farkansasPopup = "Arkansas<br/><br/>State Flower: Apple Blossom<br/><img src='arkansas_f.png' width='150px'/>";
+var fcaliforniaPopup = "California<br/><br/>State Flower: California Poppy<br/><img src=cCalifornia_f.png' width='150px'/>";
 var fcoloradoPopup = "Colorado<br/><br/>State Flower: Rocky Mountain Columbine<br/><img src='colorado_f.png' width='150px'/>";
 var fconnecticutPopup = "Connecticut<br/><br/>State Flower: Mountain Laurel<br/><img src='connecticut_f.png' width='150px'/>";
 var fdelawarePopup = "Delaware<br/><br/>State Flower: Peach Blossom<br/><img src='delaware_f.png' width='150px'/>";
@@ -124,15 +124,15 @@ var fidahoPopup = "Idaho<br/><br/>State Flower: Syringa<br/><img src='idaho_f.pn
 var fillinoisPopup = "Illinois<br/><br/>State Flower: Violet<br/><img src='illinois_f.png' width='150px'/>";
 var findianaPopup = "Indiana<br/><br/>State Flower: Peony<br/><img src='indiana_f.png' width='150px'/>";
 var fiowaPopup = "Iowa<br/><br/>State Flower: Wild Rose<br/><img src='iowa_f.png' width='150px'/>";
-var fkansasPopup = "Kansas<br/><br/>State Flower: Sunflower<br/><img src='Kansas_f.png' width='150px'/>";
+var fkansasPopup = "Kansas<br/><br/>State Flower: Sunflower<br/><img src='kansas_f.png' width='150px'/>";
 var fkentuckyPopup = "Kentucky<br/><br/>State Flower: Giant Goldenrod<br/><img src='kentucky_f.png' width='150px'/>";
-var flouisianaPopup = "Louisiana<br/><br/>State Flower: Magnolia<br/><img src='Louisiana_f.png' width='150px'/>";
-var fmainePopup = "Maine<br/><br/>State Flower: White Pine Cone<br/><img src='Maine_f.png' width='150px'/>";
+var flouisianaPopup = "Louisiana<br/><br/>State Flower: Magnolia<br/><img src='louisiana_f.png' width='150px'/>";
+var fmainePopup = "Maine<br/><br/>State Flower: White Pine Cone<br/><img src='maine_f.png' width='150px'/>";
 var fmarylandPopup = "Maryland<br/><br/>State Flower: Black-Eyed Susan<br/><img src='maryland_f.png' width='150px'/>";
 var fmassachusettsPopup = "Massachusetts<br/><br/>State Flower: Mayflower<br/><img src='massachusetts_f.png' width='150px'/>";
-var fmichiganPopup = "Michigan<br/><br/>State Flower: Apple Blossom<br/><img src='Michigan_f.png' width='150px'/>";
+var fmichiganPopup = "Michigan<br/><br/>State Flower: Apple Blossom<br/><img src='michigan_f.png' width='150px'/>";
 var fminnesotaPopup = "Minnesota<br/><br/>State Flower: Pink and White Ladys Slipper<br/><img src='minnesota_f.png' width='150px'/>";
-var fmississippiPopup = "Mississippi<br/><br/>State Flower: Evergreen Magnolia<br/><img src='Mississippi_f.png' width='150px'/>";
+var fmississippiPopup = "Mississippi<br/><br/>State Flower: Evergreen Magnolia<br/><img src='mississippi_f.png' width='150px'/>";
 var fmissouriPopup = "Missouri<br/><br/>State Flower: Hawthorn<br/><img src='missouri_f.png' width='150px'/>";
 var fmontanaPopup = "Montana<br/><br/>State Flower: Bitterroot<br/><img src='montana_f.png' width='150px'/>";
 var fnebraskaPopup = "Nebraska<br/><br/>State Flower: Giant Goldenrod<br/><img src='kentucky_f.png' width='150px'/>";
@@ -144,7 +144,7 @@ var fnewyorkPopup = "New York<br/><br/>State Flower: Rose<br/><img src='newyork_
 var fnorthcarolinaPopup = "North Carolina<br/><br/>State Flower: Flowering Dogwood<br/><img src='kentucky_f.png' width='150px'/>";
 var fnorthdakotaPopup = "North Dakota<br/><br/>State Flower: Wild Prairie Rose<br/><img src='northdakota_f.png' width='150px'/>";
 var fohioPopup = "Ohio<br/><br/>State Flower: Scarlet Carnation<br/><img src='ohio_f.png' width='150px'/>";
-var foklahomaPopup = "Oklahoma<br/><br/>State Flower: Oklahoma Rose<br/><img src='Oklahoma_f.png' width='150px'/>";
+var foklahomaPopup = "Oklahoma<br/><br/>State Flower: Oklahoma Rose<br/><img src='oklahoma_f.png' width='150px'/>";
 var foregonPopup = "Oregon<br/><br/>State Flower: Oregon Grape<br/><img src='oregon_f.png' width='150px'/>";
 var fpennsylvaniaPopup = "Pennsylvania<br/><br/>State Flower: Mountain Laurel<br/><img src='connecticut_f.png' width='150px'/>";
 var frhodeislandPopup = "Rhode Island<br/><br/>State Flower: Violet<br/><img src='illinois_f.png' width='150px'/>";
